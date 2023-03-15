@@ -1,0 +1,126 @@
+<!doctype html>
+
+<head>
+    <title>Autoservicio Sol De Mayo</title>
+    <link rel="stylesheet" href="estiloprincipal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="encabezado">
+        <img src="/img/logotrans.png" class="logo">
+        <nav class="menu">
+            <a href="#principal" class="elemenu">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPtJREFUSEvllIsNwjAMRK+bwCYwCTAJMAmwSTeBTUAPxVWapMWJVCSEpUqNW9/5c06nha1bGF8pwUnSTtKqkfgh6SbpKon3EQHgx0bgNOwsCbwRwTP8tZXURxHmT6st+feSLiH79RSBB4hYF3EM5gqoreyrBPegHnr3VkA448dq/MRnM2A4DImPDBqpoqpNIGDwB6e/qCIALdtUdpCWdmPKP7R+SjEWyMJY1lQICQ9+ssRivyX2kaD1CsmU6NW8d8GbCBhyPGwjY+i0aXbrPRWYfEtVAI7izJoqqNnwPyCY67dXScM1kV7XnFGMLY4XMP4vU1brQrnJf5/gBT3xTxliynUfAAAAAElFTkSuQmCC" />
+                <span>Inicio</span>
+            </a>
+            <a href="#ubicacion" class="elemenu">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEu1ldtVAzEMRCedkEoClRAqCVQCqQQ6ASoh5+ZoOM5afn1kf7z2SpoZPbw73fnZ3Tm+ZgAeJB0lHSQ9SvqR9CXpV9JH7Js8RwCvkk4dlYCdJWGXPj2Az2CM41uwhjmKUMJqcM6fMoQWACl5D/kvETzzBwQirJColGQAGH9HNFiZNWwBdg0IyDtqAOG9IpMBOO8UEIcSsFRBQAiwohbwSkUGYGOCA+I9Sjjj4Qzmzr1VVLXIAEgPrPfBznunCwCrgj122/2/0gzgL772AMwYU8ew303MDMDtacbeI9+FdYpcJ3fdVIoc0AVbKbIBuykq2440OeewfI59WXCOsjpdTVtz4BSkw7OZOLe1C37zeWaS3eutSd4O5RQARq5FyiyilA2wdBc5775nquJNEhj+D8oOKuvh6YZIOYBVGkf/g3JqeUeJr+th8FYXjYrJ9/TmzBxnFNgP5qSGtfePmO6ijNDy2YqC5eA4XABDqGsZzdPQ/wAAAABJRU5ErkJggg==" />
+                <span>Ubicacion</span>
+            </a>
+            <a href="#horarios" class="elemenu">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVJJREFUSEvFlYFNAzEMRX83oZMAkxQmASYBJqFMUpgE9KT8yMklvh5QYemU9s72z7d/nJ0ubLsL59c5ADeSeK7L+iHpKOmzrPyeWgZwJem5JM1yAHgriXVhM4BHSQ/Fm8DXsFuAYcR6KKt9iGtsBBCTP0laBIUMgNyFzSz8ewACTiUBtNP6BiAYvZUy3ce4HgAnnF8k4djbV3mRMadcewdGR6jS1MahQ8gAoigq+wjg2md1zwDYyyJHBGD3sKA0lGhkawDuBb2DRXPQaC40qd9Q05IMMFOjRVLLHBn8BQDADcsIYAVtkWfPxEKpKtza5GxkrDY5Hpaq47WM3XdXoQolMog6nh20DM8qrArqVcT/OCoyufZAZs/7poejI+9G4bw27GLdh/4jgH5C+oJ5D0PMI9vjerqZf7twXGN26sdXJt9gZUY/vjI3KnTsfs6l/yugb7cfWhl0Pl6SAAAAAElFTkSuQmCC" />
+                <span>Horarios</span>
+            </a>
+            <a href="#contacto" class="elemenu">
+                <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAXdJREFUSEu1lYFNQzEQQ91NYBOYBJgEmASYBJgENgG9Kv5yLwk/RWqkqv2/l7PPF18OuvA6XDi//gvw1Yh9SPqU9DojOgK4kvQiie9bSd+DzT/lHTHD2Arg5DctwWwjcf48tt/Evkl6SvAEyORmzbspu5aImHtJABH7IAnpjisBkIVAgq4bq/dglxLQA+LQ34zr/g7AutaqEgRgVvZgRAgyxyoyGawolyQpEczoCRvYyCKOZXBk4SRRDVJtsQlAMIk29JaAd2ZZDxT/sc8J/bzFJ4DRn0PXEWiCUIn74b7l84lEHfqo5HOdXxtqh1omMyRvSreMU43WNSmqQFfk81hYcXw3i0aMR+7m1HBa9hw/HHaYjaOZDk63pjy7jp9NU0tVx4SB7hrKnuOn47rOpW6IlS4TP3L8n/dBlQUz0eRtkAVIEkrHL104lsv5PJZJ5B54nHSOX73RZk2uDfcw3N6vAniDLxmanJdOjpeT9pwLsOxgB14c4Bf7LnYZ03/57QAAAABJRU5ErkJggg==" />
+                <span>Contacto</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <section class="slider-frame">
+            <ul>
+                <li><img src="img/IMG_20230310_120612.jpg" alt=""></li>
+                <li><img src="img/IMG_20230313_171858.jpg" alt=""></li>
+                <li><img src="img/IMG_20230313_170537.jpg" alt=""></li>
+                <li><img src="img/IMG_20230309_200918.jpg" alt=""></li>
+            </ul>
+        </section>
+        <section class="principal" id="principal">
+            <b>AUTOSERVICIO SOL DE MAYO</b>
+            <div class="contenedorprincipal">
+                <div>
+                    <p>Somos una empresa familiar que se encuentra en la localidad de Zavalla desde el año 2000.</p>
+                    <p>Contamos con una gran variedad de productos para poder satisfacer todas las necesidades de
+                        nuestros
+                        clientes.</p>
+                </div>
+                <ul class="lista">
+                    <li>Almacen</li>
+                    <li>Productos de limpieza</li>
+                    <li>Cigarrillos</li>
+                    <li>Bebidas</li>
+                    <li>Verduleria</li>
+                    <li>Fiambreria</li>
+                    <li>Tubos de gas</li>
+                    <li>Cargas virtuales</li>
+                    <li>Sube</li>
+                </ul>
+            </div>
+        </section>
+        <section class="ubicacion" id="ubicacion">
+            <div class="direccion">
+                <b>ENCONTRANOS EN:</b>
+                <span>25 de Mayo 1833, Zavalla, Santa Fe</span>
+            </div>
+            <div class="divubicacion">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.4229868650305!2d-60.876202926725966!3d-33.01849366757828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7b48f1df2af35%3A0x551c4ef10fc44d29!2sAutoservicio%20Sol%20de%20Mayo!5e0!3m2!1ses-419!2sar!4v1678414566265!5m2!1ses-419!2sar"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+        </section>
+        <section class="horarios" id="horarios">
+            <div class="cuadrohorarios">
+                <b>HORARIOS</b>
+                <b>DE</b>
+                <b>ATENCION:</b>
+            </div>
+            <div class="horas">
+                <b class="dias">LUNES A SABADO:</b>
+                <div style="margin: 40px;">
+                    <span class="horasnumeros">8:00 a 12:30</span>
+                    <span class="horasnumeros">16:30 a 20:30</span>
+                </div>
+                <b class="dias">DOMINGO:</b>
+                <span class="horasnumeros" style="margin-top:10px;">8:30 a 12:30</span>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <div class="cuadrocontacto">
+                <B style="margin: 10px;">HACE TU PEDIDO AL:</B>
+                <span style="margin: 10px;">0341 - 4970973</span>
+            </div>
+        </section>
+        <script>
+            const li = document.querySelectorAll(".elemenu");
+            const sec = document.querySelectorAll("section");
+            function activeMenu() {
+                let len = sec.length;
+                while (--len && window.scrollY + -550 < sec[len].offsetTop) { }
+                li.forEach(ltx => ltx.classList.remove("active"));
+                li[len].classList.add("active");
+            }
+            activeMenu();
+            window.addEventListener("scroll", activeMenu)
+        </script>
+    </main>
+    <footer>
+        <img src="/img/ubicacion.png">
+        <div class="piepagina">
+            <span>Visítanos</span>
+            <span>25 de Mayo 1833, Zavalla, Santa Fe</span>
+        </div>
+        <img src="/img/telefono.png">
+        <div class="piepagina">
+            <span>Llámanos</span>
+            <span>0341 - 4970973</span>
+        </div>
+    </footer>
+</body>
+
+</html>
