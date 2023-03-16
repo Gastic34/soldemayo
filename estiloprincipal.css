@@ -200,14 +200,14 @@ main {
 .direccion {
     display: flex;
     flex-direction: column;
-    font-size: 2.4vw;
+    font-size: 2.6vw;
     align-items: center;
     justify-content: center;
-    margin: 3%;
+    margin: 4vw;
     background-color: black;
     border-radius: 20px;
     color: #dddee1;
-    padding: 1%;
+    padding: 1vw;
     height: 20vh;
     width: 50vw;
 }
@@ -286,8 +286,8 @@ main {
 .horasnumeros {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
-    padding: 1vw;
-    font-size: 2vw;
+    padding: 2vw;
+    font-size: 3vw;
     margin: 1vw;
     color: black;
     font-family: monospace;
